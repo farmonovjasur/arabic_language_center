@@ -349,8 +349,7 @@ header .navbar .navbar-brand {
 .register_section {
     padding: 100px;
 }
-.register_section .form-control,
-.form-select
+.register_section .form-control, .form-select
  {
     border: none;
     outline: none;
@@ -360,8 +359,13 @@ header .navbar .navbar-brand {
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
     transition: 300ms ease-in-out;
 }
-.register_section .form-control,
-.form-select:focus {
+.register_section .form-control:focus {
+    background-color: white;
+    transform: scale(1);
+    box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+.register_section .form-select:focus {
     background-color: white;
     transform: scale(1);
     box-shadow: 13px 13px 100px #969696,
