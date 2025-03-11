@@ -101,6 +101,9 @@ header .navbar {
     -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+header .navbar .container {
+    padding: 0 !important;
+}
 header .navbar .navbar-brand {
     width: 140px;
     height: 140px;
@@ -264,13 +267,15 @@ header .navbar .navbar-brand {
     box-shadow: 15px 15px 30px #bebebe,
              -15px -15px 30px #ffffff;
 }
+.teacher_section .card .card-img {
+    text-align: center;
+}
 .teacher_section .card .card-img-top {
     width: 160px;
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto;
-    padding: 10px 0;
+    margin: 10px 0;
 }
 .teacher_section .card .card-title {
     color: #1f145d;
