@@ -101,6 +101,10 @@ header .navbar {
     -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+header .navbar .navbar-brand {
+    width: 140px;
+    height: 140px;
+}
 /* header end*/
 
 /* main section */
@@ -345,7 +349,9 @@ header .navbar {
 .register_section {
     padding: 100px;
 }
-.register_section .form-control {
+.register_section .form-control,
+.form-select
+ {
     border: none;
     outline: none;
     border-radius: 15px;
@@ -354,7 +360,8 @@ header .navbar {
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
     transition: 300ms ease-in-out;
 }
-.register_section .form-control:focus {
+.register_section .form-control,
+.form-select:focus {
     background-color: white;
     transform: scale(1);
     box-shadow: 13px 13px 100px #969696,

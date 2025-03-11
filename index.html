@@ -20,9 +20,9 @@
     </div>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-white py-4">
+        <nav class="navbar navbar-expand-lg bg-white">
             <div class="container">
-                <a class="navbar-brand" href="#">Logo</a>
+                <img class="navbar-brand" src="https://ik.imagekit.io/8acs6e5ln/img/logo.png?updatedAt=1741701040436">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -64,10 +64,10 @@
                         Arab tili markaziga xush kelibsiz
                     </span>
                     <h1 class="title mb-3">
-                        Til o'rganish mukammallikka javob beradigan joyda
+                        Til o'rganish mukammallikka eltuvchi yo'l
                     </h1>
                     <p class="main-text mb-4">
-                        Asoschisi <strong>Maliha Vehbe</strong> tomonidan ishlab chiqilgan noyob usulda tayyorlangan
+                        Asoschisi <strong>Hamroyev Bobur</strong> tomonidan ishlab chiqilgan noyob usulda tayyorlangan
                         malakali mahalliy o'qituvchilar tomonidan o'qitiladigan kurslarimiz orqali turli tillarni
                         o'zlashtirishning oson,
                         interaktiv va qiziqarli yondashuvini sinab ko'ring.
@@ -371,7 +371,12 @@
                     <h1 class="title mb-4">
                         Ro'yxatdan o'tish
                     </h1>
-                    <form>
+                    <div id="success-alert"
+                        class="alert alert-success position-fixed top-0 start-50 translate-middle-x text-center"
+                        style="display: none; z-index: 1050;">
+                        <strong>✅ Ariza muvaffaqiyatli yuborildi!</strong>
+                    </div>
+                    <form id="form">
                         <div class="mb-3">
                             <label for="name" class="form-label">To'liq ismingiz</label>
                             <input type="text" class="form-control" id="name" placeholder="Ismingizni kiriting"
@@ -384,8 +389,18 @@
                                 placeholder="Telefon raqamingizni kiriting" required>
                         </div>
 
+                        <div class="mb-3">
+                            <label for="select_course" class="form-label">Kurs turini tanlang</label>
+                            <select class="form-select" id="select_course" required>
+                                <option value="" selected disabled>Kurs turi</option>
+                                <option value="Online">Online</option>
+                                <option value="Ofline">Ofline</option>
+                            </select>
+                        </div>
+
                         <button type="submit" class="btn btn-primary w-100">Yuborish</button>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -486,6 +501,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/register.js"></script>
     <script src="js/main.js"></script>
 </body>
 

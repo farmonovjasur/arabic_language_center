@@ -242,4 +242,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Animation for footer
 gsap.from("footer", { opacity: 0, y: 50, duration: 1, ease: "power3.out" });
-
